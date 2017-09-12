@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单练习-京东注册</title>
+		<style type="text/css">
+			tr{
+				background-color: white;
+				
+			}
+			
+			.regist{
+				width: 270px;
+				height: 35px;
+				background-image: url(regist-btn.jpg);
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+		<table align="center" bgcolor=gainsboro border="0" cellspacing="1" cellpadding="0"  width="700px" height="800px">
+			<tr >
+				<td>
+					账户信息
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<label>
+						&nbsp;&nbsp;&nbsp;
+						<font color=red>*</font>用户名：
+						<input type="text" value="username" name="username" required/> 
+					</label>
+		
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<label><font color=red>*</font>请设置密码：
+						<input type="password" value="pwd"  name="pwd" required/> 
+					</label>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<label><font color=red>*</font>请确认密码：
+						<input type="password" value="repwd" required />
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					公司信息
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<label style="margin-right: 62px;">
+						<font color=red>*</font>
+						发票抬头/营业执照公司名称：
+						<select name="address" >
+							<option>请选择</option>
+							<option value="北京" name="address">北京</option>
+							<option value="上海" name="address">上海</option>
+							<option value="深圳" name="address">深圳</option>
+							<option value="武汉" name="address">武汉</option>
+							<option value="杭州" name="address">杭州</option>
+						
+						</select>
+					</label>
+					<label>
+						<select name="address" >
+							<option>请选择</option>
+							<option value="北京" name="address">北京</option>
+							<option value="上海" name="address">上海</option>
+							<option value="深圳" name="address">深圳</option>
+							<option value="武汉" name="address">武汉</option>
+							<option value="杭州" name="address">杭州</option>
+						
+						</select>
+					</label>
+					<label>
+						<select name="address" >
+							<option>请选择</option>
+							<option value="北京" name="address">北京</option>
+							<option value="上海" name="address">上海</option>
+							<option value="深圳" name="address">深圳</option>
+							<option value="武汉" name="address">武汉</option>
+							<option value="杭州" name="address">杭州</option>
+						
+						</select>
+					</label>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<label><font color=red>*</font>注册邀请码：
+						<input type="text" name="invite-num"  /> 
+					</label>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<label style="margin-right: 52px;">
+						<font color=red>*</font>企业人数：
+						<select>
+							<option>请选择</option>
+							<option value="10-100" name="people">10-100</option>
+							<option value="100-500" name="people">100-500</option>
+							<option value="500-1000" name="people">500-1000</option>
+							<option value="1000-2000" name="people">1000-2000</option>
+							<option value=">2000" name="v">>2000</option>
+						
+						</select>
+					</label>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<label style="margin-right: 50px;">
+						<font color=red>*</font>公司行业：
+						<select name="major">
+							<option value="计算机软件" name="major">计算机软件</option>
+							<option value="IT" name="major">IT</option>
+							<option value="教育" name="major">教育</option>
+							<option value="媒体" name="major">媒体</option>
+						</select>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					联系人信息
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+				<label><font color=red>*</font>
+					联系人姓名：
+						<input type="text" name="iuser" /> 
+					</label>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<label style="margin-left: 15px;">
+					<font color=red>*</font>
+					验证手机：
+						<input type="text" name="phone" /> 
+					</label>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<label style="margin-left: 112px;">
+					<font color=red>*</font>
+					短信验证码：
+						<input type="text" name="text" /> 
+					</label>
+					<input type="button" value="获取短信验证码"/> 
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<label style="margin-left: 180px;">
+						<font color=red>*</font>
+						验证码：
+						<input type="text" name="code" /> 
+					</label>
+					<input type="image" name="code1" /> 
+					<label>看不清？</label><a href="#">换一张</a>
+				</td>
+			</tr>
+			<tr  align="center">
+				<td>
+				<label>	<input type="checkbox" name="agree" />
+					我已阅读并同意<font color="blue"><京东用户注册协议><隐私政策></font>
+				</label>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<input type="submit" name="regist" value="" class="regist"/> 
+				</td>
+			</tr>
+		
+		</table>
+		</form>
+	</body>
+</html>

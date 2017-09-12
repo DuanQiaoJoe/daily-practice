@@ -1,0 +1,101 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+header{
+	height: 210px;
+	width: 100%;
+	background-image: url(../img/banner.jpg);
+}
+nav{
+	width: 100%;
+	height: 60px;
+	text-align: center;
+
+}
+.menu{
+	width: 70%;
+	height: 100%;
+	margin:2px auto;
+	background-color: white;
+}
+.menu ul{
+	margin-top: 1px;
+	height: 50px;
+}
+.menu ul li{
+	list-style: none;
+	vertical-align: middle;
+	display: inline-block;
+}
+.list{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.list a{
+	text-decoration: none;
+	color: black;
+}
+.list a:hover{
+	color: red;
+}
+.content{
+	width: 100%;
+	height: 600px;
+	background-color: lightgray;
+}
+.container{
+	border: 1px solid lightgrey;
+	height:100%;
+	width: 80%;
+	margin: 10px auto;
+	
+
+}
+.main-content{
+	float: left;
+	width: 70%;
+	height: 600px;
+	background-color: #FFFFFF;
+	
+}
+.post{
+	
+	border: 1px solid lightgray;
+	padding: 30px;
+	height: 300px;
+	overflow: hidden;
+}
+.post_head{
+	text-align: center;
+}
+.post-title{ 
+	font-family: "宋体";
+	font-size: 2.5em;
+	line-height: 1em;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.author a{
+	color: orangered;
+}
+.post-permalink{
+	display: block;
+	box-sizing: border-box;
+}
+.btn{
+	border: 1px solid orangered;
+	background-color: orangered;
+	color: white;
+	border-radius: 1px;
+}
+.right-content{
+ 	float: left;
+ 	width:280px;
+ 	height: 300px;
+ 	margin-left: 30px;
+ 	background-color: #FFFFFF;
+ 	text-align: center;
+ }
