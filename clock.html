@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>我的时钟</title>
+	<style>
+		#time{
+			/*display: block;*/
+		}
+	</style>
+	
+</head>
+<body>
+	<!-- 怎么把所有的数组元素放到一个div里，格式好控制？？？ -->
+	<div id="day" ></div> <!-- 放置所有时间如2010年-1-12 -->
+	<span id="time"></span>
+	<input type="button" value="stop" onclick="stop()">
+	<script>
+		var array = ["2010-1-12","2015-8-8","2018-11-02","1990-12-30"];
+		var reg=/(\d{4})-(\d{1,2})-(\d{1,2})/;
+		for(temp in array){
+			var date=array[temp].replace(reg,"$1年$2月$3日");
+			document.write(date+"<br/>");
+			//document.getElementById("day").innerHTML=(date);//怎么把所有内容都放在一个div里
+
+		}
+		
+		 var st = setInterval(function(){
+			var date = new Date();
+	    	var t=date.toLocaleString();
+			document.getElementById("time").innerText=(t);
+		},1000)
+		//停止时间
+		function stop(){
+			clearInterval(st);
+
+		}
+	</script>
+</body>
+</html>
